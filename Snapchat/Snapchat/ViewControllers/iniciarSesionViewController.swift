@@ -60,16 +60,20 @@ class iniciarSesionViewController: UIViewController {
                 print("Tenemos el siguiente error - 1:\(error)")
                 Auth.auth().createUser(withEmail: self.emailTextField.text!, password: self.passwordTextField.text!, completion: { (user,error) in
                     print("Intentamos Crear un Usuario")
-                    if error == nil{
+                    if error == nil {
                         print("El usuario fue creado existosamente")
                         self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
-                    }else{
+                        let userData = [
+                            "email":user!.user.email,
+                            "uid": user!.user.uid
+                        ]
+                        let uid = user!.user.uid
+                        Database.database().reference().child("usuarios").child(uid).setValue(userData)
+                    } else {
                         print("Tenemos el siguiente error - 2:\(error?.localizedDescription)")
-                        Database.database().reference().child("usuarios").child(user!.user.uid)
-                            .child("email").setValue(user!.user.email)
                     }
                 })
-            }else{
+            } else {
                 print("Inicio de Sesion exitoso")
                 self.performSegue(withIdentifier: "iniciarsesionsegue", sender: nil)
             }

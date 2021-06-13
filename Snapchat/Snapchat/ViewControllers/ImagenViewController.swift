@@ -57,7 +57,7 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate, U
         //let imagenesFolder = Storage.storage().reference().child("imagenes")
         let imagenData = imageView.image!.pngData()!
         //let imagenData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
-        /*imageFolder.putData(imagenData, metadata: nil) { metadata, error in
+        imageFolder.putData(imagenData, metadata: nil) { metadata, error in
             imageFolder.downloadURL { url, error in
                 print("url")
                 guard let url = url else {return}
@@ -65,19 +65,19 @@ class ImagenViewController: UIViewController, UIImagePickerControllerDelegate, U
                 self.performSegue(withIdentifier: "seleccionarContactoSegue", sender: url.absoluteString)
             }
         }
-        */
+    
         
       
         
-        imageFolder.child("\(imagenID).jpg").putData(imagenData, metadata: nil, completion: {(metadata,error)in print("Intentando subir la imagen")
-            if error != nil {
-                print("Ocurrio un error:\(error)")
-            } else {
-      
-                self.performSegue(withIdentifier: "seleccionarContactoSegue", sender: metadata)
-            }
-            //
-        })
+//        imageFolder.child("\(imagenID).jpg").putData(imagenData, metadata: nil, completion: {(metadata,error)in print("Intentando subir la imagen")
+//            if error != nil {
+//                print("Ocurrio un error:\(error)")
+//            } else {
+//
+//                self.performSegue(withIdentifier: "seleccionarContactoSegue", sender: metadata)
+//            }
+//            //
+//        })
     
         
         

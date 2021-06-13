@@ -22,10 +22,9 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         
-        
         if snaps.count == 0 {
-            cell.textLabel?.text = snap.from
-        }else{
+            cell.textLabel?.text = "No tienes un snaps :("
+        } else {
             let snap = snaps[indexPath.row]
             cell.textLabel?.text=snap.from
         }
@@ -33,15 +32,17 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let snap = snaps[indexPath.row]
+        print("Snaps")
+        print(snap.imagenURL)
         performSegue(withIdentifier: "versnapsegue", sender: snap)
         
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "versnapsegue"{
-            let siguienteVC = segue.destination as! VerSnapViewController
-            siguienteVC.snap = sender as! Snap
-        }
+//        if segue.identifier == "versnapsegue"{
+            let siguienteVC = segue.destination as? VerSnapViewController
+            siguienteVC?.snap = sender as! Snap
+//        }
     }
     
 

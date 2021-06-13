@@ -29,12 +29,7 @@ class ElegirUsuarioViewController: UIViewController, UITableViewDataSource, UITa
         tableView.dataSource = self
         print("entra...")
         
-        Database.database().reference().child("usuarios").observeSingleEvent(of: .value, with: { (snapshot) in
-            print("Enras ono?")
-            debugPrint(snapshot)
-        })
-        
-        Database.database().reference().child("usuarios").observe(DataEventType.value, with: {(snapshot)
+        Database.database().reference().child("usuarios").observe(DataEventType.childAdded, with: {(snapshot)
             in
             print("Aca?")
             print(snapshot)

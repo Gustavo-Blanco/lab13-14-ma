@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,25 +23,24 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YUW-xY-q8U">
-                                <rect key="frame" x="40" y="151.5" width="334" height="30"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="40" y="151.5" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-6e-4Ks">
-                                <rect key="frame" x="40" y="191.5" width="334" height="30"/>
-                                <nil key="textColor"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zsh-6e-4Ks">
+                                <rect key="frame" x="40" y="195.5" width="334" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEN-PK-gmh">
-                                <rect key="frame" x="161.5" y="251.5" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEN-PK-gmh">
+                                <rect key="frame" x="161.5" y="259.5" width="91" height="30"/>
                                 <state key="normal" title="Iniciar Sesión"/>
                                 <connections>
                                     <action selector="iniciarSesionTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pqw-Yf-Y3y"/>
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9nI-cO-6sd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="25" id="0eO-7D-CUT"/>
@@ -57,7 +54,6 @@
                             <constraint firstItem="zsh-6e-4Ks" firstAttribute="top" secondItem="YUW-xY-q8U" secondAttribute="bottom" constant="10" id="h3u-ur-jcF"/>
                             <constraint firstItem="cEN-PK-gmh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ui1-Vx-KfI"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="emailTextField" destination="YUW-xY-q8U" id="xlm-zP-07A"/>
@@ -67,7 +63,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1700" y="13"/>
+            <point key="canvasLocation" x="-2175" y="1"/>
         </scene>
         <!--Snaps View Controller-->
         <scene sceneID="9Qn-KM-Prz">
@@ -82,6 +78,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="zpL-5j-rdJ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="3u2-P9-IXA" firstAttribute="top" secondItem="zpL-5j-rdJ" secondAttribute="top" id="JfS-OD-a0O"/>
@@ -89,7 +86,6 @@
                             <constraint firstItem="3u2-P9-IXA" firstAttribute="leading" secondItem="zpL-5j-rdJ" secondAttribute="leading" id="VCc-v6-Jhd"/>
                             <constraint firstItem="zpL-5j-rdJ" firstAttribute="trailing" secondItem="3u2-P9-IXA" secondAttribute="trailing" id="yju-TU-uaH"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="zpL-5j-rdJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="RII-W7-cZ2">
                         <barButtonItem key="leftBarButtonItem" title="Cerrar Sesión" id="bAd-Rg-kuv">
@@ -105,12 +101,12 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="3u2-P9-IXA" id="eae-q0-eQQ"/>
-                        <segue destination="N7m-ms-yQv" kind="show" identifier="versnapsegue" id="SlC-71-Ngz"/>
+                        <segue destination="N7m-ms-yQv" kind="presentation" identifier="versnapsegue" modalPresentationStyle="fullScreen" id="SlC-71-Ngz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5wt-gu-5Ke" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-55" y="1"/>
+            <point key="canvasLocation" x="-470" y="1"/>
         </scene>
         <!--Ver Snap View Controller-->
         <scene sceneID="gew-o7-eVU">
@@ -127,9 +123,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="F43-wI-67H">
-                                <rect key="frame" x="10" y="98" width="394" height="723"/>
+                                <rect key="frame" x="10" y="54" width="394" height="767"/>
                             </imageView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="7Wi-T4-7Tb"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="fuF-Dq-O17" firstAttribute="top" secondItem="F43-wI-67H" secondAttribute="bottom" constant="10" id="6Hx-3R-1ue"/>
@@ -141,16 +138,15 @@
                             <constraint firstItem="F43-wI-67H" firstAttribute="top" secondItem="7Wi-T4-7Tb" secondAttribute="top" constant="10" id="zFg-CJ-0uP"/>
                             <constraint firstItem="7Wi-T4-7Tb" firstAttribute="trailing" secondItem="F43-wI-67H" secondAttribute="trailing" constant="10" id="zcm-xz-ydh"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="7Wi-T4-7Tb"/>
                     </view>
                     <connections>
                         <outlet property="imageView" destination="F43-wI-67H" id="acE-6s-0qW"/>
-                        <outlet property="label" destination="o4Y-EU-O4p" id="UeT-M7-mOY"/>
+                        <outlet property="label" destination="fuF-Dq-O17" id="3C5-Sk-4yU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bta-Pc-lQU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="786.95652173913049" y="0.6696428571428571"/>
+            <point key="canvasLocation" x="636" y="473"/>
         </scene>
         <!--Title-->
         <scene sceneID="Pfb-zO-1dZ">
@@ -168,12 +164,11 @@
                                 </constraints>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Descripción..." textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJs-j9-nBW">
-                                <rect key="frame" x="87" y="273" width="240" height="30"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="87" y="273" width="240" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Les-g7-gTM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Les-g7-gTM">
                                 <rect key="frame" x="154" y="336" width="106" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Elegir Contacto"/>
@@ -182,6 +177,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="Kjd-RV-UTN"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Kjd-RV-UTN" firstAttribute="trailing" secondItem="a8g-Nv-jmx" secondAttribute="trailing" constant="87" id="3aL-J4-8Up"/>
@@ -191,7 +187,6 @@
                             <constraint firstItem="Kjd-RV-UTN" firstAttribute="trailing" secondItem="cJs-j9-nBW" secondAttribute="trailing" constant="87" id="jbe-Rp-wMQ"/>
                             <constraint firstItem="cJs-j9-nBW" firstAttribute="top" secondItem="a8g-Nv-jmx" secondAttribute="bottom" constant="37" id="vdW-h9-pSW"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Kjd-RV-UTN"/>
                     </view>
                     <navigationItem key="navigationItem" title="Title" id="0cK-Hf-GFe">
                         <barButtonItem key="rightBarButtonItem" systemItem="camera" id="PnJ-vo-Zym">
@@ -209,7 +204,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceJ-SS-eQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="735" y="-835"/>
+            <point key="canvasLocation" x="635" y="-307"/>
         </scene>
         <!--Elegir Usuario View Controller-->
         <scene sceneID="fhE-Hn-In7">
@@ -224,6 +219,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="gyw-mF-DUW"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="vX3-K4-qqk" firstAttribute="leading" secondItem="gyw-mF-DUW" secondAttribute="leading" id="C7H-mB-EGh"/>
@@ -231,7 +227,6 @@
                             <constraint firstItem="vX3-K4-qqk" firstAttribute="top" secondItem="gyw-mF-DUW" secondAttribute="top" id="eLN-j2-otv"/>
                             <constraint firstItem="gyw-mF-DUW" firstAttribute="trailing" secondItem="vX3-K4-qqk" secondAttribute="trailing" id="vFs-Sv-XYd"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="gyw-mF-DUW"/>
                     </view>
                     <connections>
                         <outlet property="tableView" destination="vX3-K4-qqk" id="aks-xw-GYY"/>
@@ -239,7 +234,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qgy-GY-eLS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1606" y="-136"/>
+            <point key="canvasLocation" x="1641" y="-307"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="S5M-tQ-aNf">
@@ -257,7 +252,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6sg-TF-bbD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-823" y="13"/>
+            <point key="canvasLocation" x="-1245" y="1"/>
         </scene>
     </scenes>
 </document>
